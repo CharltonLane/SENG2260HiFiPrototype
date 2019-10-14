@@ -17,32 +17,53 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 	GameObject artwork; // The artwork the user is standing close to. This is the GO named Artwork in the artwork prefab
 	GameObject infoPanel; // This is the opened info panel with the painting's details.
 	GameObject hiddenInfoPanel; // This is the single i icon, shown when the info panel isn't open.
+    Collider ARtZone; //the collider that represents the area of the 3D art zone
 
 	public GameObject homeMenu; // The references to these are set in the editor.
 	public GameObject infoMenu;
 
+    void Start()
+    {
+        ARtZone = GameObject.Find("ARtZone").GetComponent<CapsuleCollider>();
+        InstantiateObjects();   //this will create new objects for the artwork elements to go into
+    }
 
 	private void OnTriggerEnter(Collider other) {
-		// We've entered an artworks trigger so lets remember it so we can enable the info panel if needed.
-		EnableIButton();
-		artwork = other.transform.parent.gameObject; // This gets the GO named "Artwork" in the artwork prefab.
-		infoPanel = artwork.transform.GetChild(2).GetChild(1).gameObject; // The first GetChild(2) gets the "Canvas" GO's transform and the second GetChild(1) gets the InfoPanel GO's transform.
-		hiddenInfoPanel = artwork.transform.GetChild(2).GetChild(0).gameObject;
+       
+        //Checking that the collider that was triggered was the ARt Zone
+        if (other.Equals(ARtZone))
+        {
+            Debug.Log("User entered ARt Zone");
+            //Ask which hand they want the UI to be on
+            //ChangeUI here
+        }
+        else
+        {   
+            //If collider wasnt ARt Zone, then it must be an artwork
+            // We've entered an artworks trigger so lets remember it so we can enable the info panel if needed.
+            EnableIButton();
+            artwork = other.transform.parent.gameObject; // This gets the GO named "Artwork" in the artwork prefab.
+            infoPanel = artwork.transform.GetChild(2).GetChild(1).gameObject; // The first GetChild(2) gets the "Canvas" GO's transform and the second GetChild(1) gets the InfoPanel GO's transform.
+            hiddenInfoPanel = artwork.transform.GetChild(2).GetChild(0).gameObject;
+        }
 	}
 
 	private void OnTriggerExit(Collider other) {
-		// We have left an artwork's trigge so lets close the info panel if it's open.
-		if (infoPanel.activeSelf) {
-			HideInfoPanel();
+        
+        if (other.Equals(ARtZone))
+        {
+            Debug.Log("User exited ARt Zone");
+        }
+        else if (infoPanel.activeSelf) {
+            // We have left an artwork's trigger so lets close the info panel if it's open.
+            HideInfoPanel();
 			// Also need to switch the menu back to the home menu.
 			homeMenu.SetActive(true);
 			infoMenu.SetActive(false);
 		}
 
-		// Make it 'forget' the last painting;
-		artwork = null;
-		infoPanel = null;
-		hiddenInfoPanel = null;
+        // Make it 'forget' the last painting by creating new artwork objects
+        InstantiateObjects();
 
 		DisableIButton();
 	}
@@ -68,6 +89,12 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 		hiddenInfoPanel.SetActive(false);
 		
 	}
+    private void InstantiateObjects()
+    {
+        artwork = new GameObject();
+        infoPanel = new GameObject();
+        hiddenInfoPanel = new GameObject();
+    }
 
 
 }
