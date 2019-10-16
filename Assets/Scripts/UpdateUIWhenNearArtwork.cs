@@ -21,6 +21,7 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 
 	public GameObject homeMenu; // The references to these are set in the editor.
 	public GameObject infoMenu;
+    public GameObject ARtMenu;
 
     void Start()
     {
@@ -36,6 +37,7 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
             Debug.Log("User entered ARt Zone");
             //Ask which hand they want the UI to be on
             //ChangeUI here
+            DisplayARtMenu();
         }
         else
         {   
@@ -53,6 +55,7 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
         if (other.Equals(ARtZone))
         {
             Debug.Log("User exited ARt Zone");
+            HideARtMenu();
         }
         else if (infoPanel.activeSelf) {
             // We have left an artwork's trigger so lets close the info panel if it's open.
@@ -89,6 +92,19 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 		hiddenInfoPanel.SetActive(false);
 		
 	}
+
+    private void DisplayARtMenu()
+    {
+        homeMenu.SetActive(false);
+        ARtMenu.SetActive(true);
+    }
+
+    private void HideARtMenu()
+    {
+        homeMenu.SetActive(true);
+        ARtMenu.SetActive(false);
+    }
+
     private void InstantiateObjects()
     {
         artwork = null;
