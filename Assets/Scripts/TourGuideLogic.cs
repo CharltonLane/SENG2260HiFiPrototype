@@ -18,20 +18,27 @@ public class TourGuideLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (onTour)
-        {
-            
-        }
+        gameObject.transform.position = artworks[artworkIndex].transform.GetChild(3).transform.position;
     }
 
     public void moveToNextArtwork()
     {
-        gameObject.transform.position = artworks[artworkIndex+1].transform.GetChild(3).transform.position;
+        artworkIndex++;
+        if (artworkIndex >= artworks.Length)
+        {
+            artworkIndex = 0;
+        }
+       
     }
 
     public void moveToPrevArtwork()
     {
-
+        artworkIndex--;
+        if (artworkIndex < 0)
+        {
+            artworkIndex = artworks.Length-1;
+        }
+      
     }
     
 
