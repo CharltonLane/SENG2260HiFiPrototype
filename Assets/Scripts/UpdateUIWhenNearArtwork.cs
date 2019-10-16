@@ -91,9 +91,9 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 	}
     private void InstantiateObjects()
     {
-        artwork = new GameObject();
-        infoPanel = new GameObject();
-        hiddenInfoPanel = new GameObject();
+        artwork = null;
+        infoPanel = null;
+        hiddenInfoPanel = null;
     }
 
 
