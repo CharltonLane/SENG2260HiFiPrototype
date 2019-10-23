@@ -25,7 +25,7 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 
     void Start()
     {
-        ARtZone = GameObject.Find("ARtZone").GetComponent<CapsuleCollider>();
+        ARtZone = GameObject.Find("ARtZone").GetComponent<BoxCollider>();
         InstantiateObjects();   //this will create new objects for the artwork elements to go into
     }
 
