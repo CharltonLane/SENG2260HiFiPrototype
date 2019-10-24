@@ -23,6 +23,8 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 	public GameObject infoMenu;
     public GameObject ARtMenu;
 
+	public Wishlist wishlist;
+
     void Start()
     {
         ARtZone = GameObject.Find("ARtZone").GetComponent<BoxCollider>();
@@ -112,5 +114,20 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
         hiddenInfoPanel = null;
     }
 
+	public void AddArtworkToWishlist() {
+		wishlist.AddArtworkToWishlist(artwork);
+	}
 
+	public void RemoveArtworkFromWishlist() {
+		wishlist.RemoveArtworkFromWishlist(artwork);
+	}
+
+
+	public void LikeArtwork() {
+		artwork.GetComponent<Artwork>().LikeArtwork();
+	}
+
+	public void UnlikeArtwork() {
+		artwork.GetComponent<Artwork>().UnlikeArtwork();
+	}
 }
