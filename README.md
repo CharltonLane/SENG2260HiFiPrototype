@@ -21,3 +21,12 @@ Then make a pull request and we can agree to merch the branch and your changes w
 (idk too much about using branches and pull requests, does this sound right?)
 
 (Anyone can update this if there's anything missing or that could be clarified)
+
+# IMPORTING IMAGES
+
+Images to be used as UI things like buttons need some import settings changed:
+
+Change the Texture Type to "Sprite (2D and UI)"
+Change the Mesh Type to "Full Rect"
+then click the arrow next to Advanced to see the advanced settings and tick "Read/Write Enabled"
+Then click apply to the lower right.
