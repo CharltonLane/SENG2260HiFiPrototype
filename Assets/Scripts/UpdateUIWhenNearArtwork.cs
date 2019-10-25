@@ -31,6 +31,28 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
         InstantiateObjects();   //this will create new objects for the artwork elements to go into
     }
 
+	public void DisplayIMenu() {
+		// Enables the I menu with the correct buttons showing (Like/Unlike and Add/Remove from wishlist).
+		infoMenu.SetActive(true);
+		if (wishlist.artworkWishlist.Contains(artwork)) {
+			//print("This painting is in the wishg,ist");
+			infoMenu.transform.Find("AddToWishlistButton").gameObject.SetActive(false);
+			infoMenu.transform.Find("RemoveFromWishlistButton").gameObject.SetActive(true);
+		} else {
+			infoMenu.transform.Find("AddToWishlistButton").gameObject.SetActive(true);
+			infoMenu.transform.Find("RemoveFromWishlistButton").gameObject.SetActive(false);
+		}
+
+		if (artwork.GetComponent<Artwork>().hasBeenLiked) {
+			//print("This painting has been liked");
+			infoMenu.transform.Find("UnlikeButton").gameObject.SetActive(true);
+			infoMenu.transform.Find("LikeButton").gameObject.SetActive(false);
+		} else {
+			infoMenu.transform.Find("UnlikeButton").gameObject.SetActive(false);
+			infoMenu.transform.Find("LikeButton").gameObject.SetActive(true);
+		}
+	}
+
 	private void OnTriggerEnter(Collider other) {
        
         //Checking that the collider that was triggered was the ARt Zone
