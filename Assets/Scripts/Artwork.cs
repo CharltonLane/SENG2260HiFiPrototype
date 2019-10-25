@@ -11,6 +11,8 @@ public class Artwork : MonoBehaviour {
 	public string description = "Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text Artwork Description Text ";
 	public string price = "$300";
 
+	public bool hasBeenLiked = false;
+
 	// Start is called before the first frame update
 	void Start()
     {
@@ -27,9 +29,11 @@ public class Artwork : MonoBehaviour {
 
 	public void LikeArtwork() {
 		noOfLikes++;
+		hasBeenLiked = true;
 	}
 
 	public void UnlikeArtwork() {
 		noOfLikes--;
+		hasBeenLiked = false;
 	}
 }

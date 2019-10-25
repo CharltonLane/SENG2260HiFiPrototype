@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wishlist : MonoBehaviour {
 
-	LinkedList<GameObject> artworkWishlist = new LinkedList<GameObject>();
+	public LinkedList<GameObject> artworkWishlist = new LinkedList<GameObject>();
 
 	public GameObject wishlistArtowrkButtonPrefab;
 
