@@ -6,7 +6,7 @@ public class Wishlist : MonoBehaviour {
 
 	public LinkedList<GameObject> artworkWishlist = new LinkedList<GameObject>();
 
-	public GameObject wishlistArtowrkButtonPrefab;
+	public GameObject wishlistArtworkButtonPrefab;
 
 	public GameObject scrollViewContent;
 
@@ -31,26 +31,55 @@ public class Wishlist : MonoBehaviour {
 
 
 		// Delete any buttons in the wishlist scroll view.
-		for (int i=0; i < scrollViewContent.transform.childCount; i++) {
+		for (int i = 0; i < scrollViewContent.transform.childCount; i++) {
 			Destroy(scrollViewContent.transform.GetChild(i).gameObject);
 		}
 
-		// Create the buttons for the artwork currently in the wishlist.
-		foreach (GameObject artwork in artworkWishlist) {
-			GameObject newButton = Instantiate(wishlistArtowrkButtonPrefab, scrollViewContent.transform);
-			newButton.GetComponent<UnityEngine.UI.Image>().sprite = artwork.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
-			Artwork buttonArt = newButton.GetComponent<Artwork>();
-			Artwork artworkArt = artwork.GetComponent<Artwork>();
-			buttonArt.sprite = artworkArt.sprite;
-			buttonArt.title = artworkArt.title;
-			buttonArt.author = artworkArt.author;
-			buttonArt.description = artworkArt.description;
-			buttonArt.price = artworkArt.price;
-			buttonArt.noOfLikes = artworkArt.noOfLikes;
+		ResetWishlistInfoPanel();
 
-			newButton.GetComponent<UpdateInfoPanel>().artworkInfoPanel = artworkInfoPanel;
-			print("Set the info panel to: " + artworkInfoPanel);
+		// Reset the width of the scroll view content to 0, it get's widened every time you add a button below.
+		scrollViewContent.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 300);
+
+		if (artworkWishlist.Count > 0) {
+
+			//artworkInfoPanel.transform.GetChild(5).gameObject.SetActive(true);
+			//artworkInfoPanel.transform.GetChild(6).gameObject.SetActive(true);
+			artworkInfoPanel.transform.GetChild(7).gameObject.SetActive(false);
+
+			// Create the buttons for the artwork currently in the wishlist.
+			foreach (GameObject artwork in artworkWishlist) {
+				GameObject newButton = Instantiate(wishlistArtworkButtonPrefab, scrollViewContent.transform);
+				newButton.GetComponent<UnityEngine.UI.Image>().sprite = artwork.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite;
+				Artwork buttonArt = newButton.GetComponent<Artwork>();
+				Artwork artworkArt = artwork.GetComponent<Artwork>();
+				buttonArt.sprite = artworkArt.sprite;
+				buttonArt.title = artworkArt.title;
+				buttonArt.author = artworkArt.author;
+				buttonArt.description = artworkArt.description;
+				buttonArt.price = artworkArt.price;
+				buttonArt.noOfLikes = artworkArt.noOfLikes;
+
+				newButton.GetComponent<UpdateInfoPanel>().artworkInfoPanel = artworkInfoPanel;
+
+				scrollViewContent.GetComponent<RectTransform>().sizeDelta = new Vector2(scrollViewContent.GetComponent<RectTransform>().sizeDelta.x+40, 300);
+				print("Set the info panel to: " + artworkInfoPanel);
+			}
+		} else {
+			// Wishlist is empty so hide the sample text and display the info message.
+
+			
+			artworkInfoPanel.transform.GetChild(7).gameObject.SetActive(true);
 		}
+
+	}
+
+	private void ResetWishlistInfoPanel() {
+		artworkInfoPanel.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "";
+		artworkInfoPanel.transform.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>().text = "";
+		artworkInfoPanel.transform.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>().text = "";
+		artworkInfoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = "";
+		artworkInfoPanel.transform.GetChild(5).gameObject.SetActive(false);
+		artworkInfoPanel.transform.GetChild(6).gameObject.SetActive(false);
 	}
 
 	public void AddArtworkToWishlist(GameObject artwork) {

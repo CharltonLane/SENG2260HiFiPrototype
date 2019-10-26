@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f3db62e5640824585ed5fb0fab05ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
   noOfLikes: 0
   title: Artwork Title
   author: Artwork Author
@@ -150,6 +151,8 @@ MonoBehaviour:
     Artwork Description Text Artwork Description Text Artwork Description Text Artwork
     Description Text Artwork Description Text Artwork Description Text '
   price: $300
+  hasBeenLiked: 0
+  infoPanel: {fileID: 0}
 --- !u!114 &5447728830500729770
 MonoBehaviour:
   m_ObjectHideFlags: 0

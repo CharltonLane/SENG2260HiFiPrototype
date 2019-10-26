@@ -20,6 +20,7 @@ public class UpdateInfoPanel : MonoBehaviour {
 		artworkInfoPanel.transform.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>().text = artwork.author;
 		artworkInfoPanel.transform.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>().text = artwork.description;
 		artworkInfoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = artwork.price;
+		artworkInfoPanel.transform.GetChild(5).gameObject.SetActive(true);
 		artworkInfoPanel.transform.GetChild(5).GetComponent<UnityEngine.UI.Image>().sprite = artwork.sprite;
 
 	}
