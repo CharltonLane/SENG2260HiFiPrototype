@@ -21,6 +21,7 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 
 	public GameObject homeMenu; // The references to these are set in the editor.
 	public GameObject infoMenu;
+	public GameObject tourInfoMenu;
     public GameObject ARtMenu;
 
 	public Wishlist wishlist;
@@ -31,27 +32,39 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
         InstantiateObjects();   //this will create new objects for the artwork elements to go into
     }
 
-	public void DisplayIMenu() {
+	public void DisplayIMenu(string menu) {
+
+		GameObject iMenu;
+		if (menu.Equals("IMenu")) {
+			iMenu = infoMenu;
+		} else {
+			iMenu = tourInfoMenu;
+		}
+
+		print(iMenu.name);
 		// Enables the I menu with the correct buttons showing (Like/Unlike and Add/Remove from wishlist).
-		infoMenu.SetActive(true);
+		iMenu.SetActive(true);
 		if (wishlist.artworkWishlist.Contains(artwork)) {
 			//print("This painting is in the wishg,ist");
-			infoMenu.transform.Find("AddToWishlistButton").gameObject.SetActive(false);
-			infoMenu.transform.Find("RemoveFromWishlistButton").gameObject.SetActive(true);
+			iMenu.transform.Find("AddToWishlistButton").gameObject.SetActive(false);
+			iMenu.transform.Find("RemoveFromWishlistButton").gameObject.SetActive(true);
 		} else {
-			infoMenu.transform.Find("AddToWishlistButton").gameObject.SetActive(true);
-			infoMenu.transform.Find("RemoveFromWishlistButton").gameObject.SetActive(false);
+			iMenu.transform.Find("AddToWishlistButton").gameObject.SetActive(true);
+			iMenu.transform.Find("RemoveFromWishlistButton").gameObject.SetActive(false);
 		}
 
 		if (artwork.GetComponent<Artwork>().hasBeenLiked) {
 			//print("This painting has been liked");
-			infoMenu.transform.Find("UnlikeButton").gameObject.SetActive(true);
-			infoMenu.transform.Find("LikeButton").gameObject.SetActive(false);
+			iMenu.transform.Find("UnlikeButton").gameObject.SetActive(true);
+			iMenu.transform.Find("LikeButton").gameObject.SetActive(false);
 		} else {
-			infoMenu.transform.Find("UnlikeButton").gameObject.SetActive(false);
-			infoMenu.transform.Find("LikeButton").gameObject.SetActive(true);
+			iMenu.transform.Find("UnlikeButton").gameObject.SetActive(false);
+			iMenu.transform.Find("LikeButton").gameObject.SetActive(true);
 		}
 	}
+
+
+
 
 	private void OnTriggerEnter(Collider other) {
        
@@ -98,10 +111,15 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 	public void EnableIButton() {
 		// Enables the I button on the home menu so it can be clicked.
 		homeMenu.transform.GetChild(0).GetComponent<Button>().interactable = true;
+
+		// Enables it on the tour menu too.
+		homeMenu.transform.parent.GetChild(4).GetChild(1).GetComponent<Button>().interactable = true;
 	}
 
 	public void DisableIButton() {
 		homeMenu.transform.GetChild(0).GetComponent<Button>().interactable = false;
+
+		homeMenu.transform.parent.GetChild(4).GetChild(1).GetComponent<Button>().interactable = false;
 	}
 
 	public void HideInfoPanel() {

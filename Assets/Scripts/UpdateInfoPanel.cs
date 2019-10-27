@@ -6,7 +6,11 @@ public class UpdateInfoPanel : MonoBehaviour {
 
 	Artwork artwork;
 
+	public GameObject art;
+
 	public GameObject artworkInfoPanel;
+
+	public Wishlist wishlist;
 
     // Start is called before the first frame update
     void Start() {
@@ -22,6 +26,19 @@ public class UpdateInfoPanel : MonoBehaviour {
 		artworkInfoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = artwork.price;
 		artworkInfoPanel.transform.GetChild(5).gameObject.SetActive(true);
 		artworkInfoPanel.transform.GetChild(5).GetComponent<UnityEngine.UI.Image>().sprite = artwork.sprite;
+		artworkInfoPanel.transform.GetChild(6).gameObject.SetActive(true);
+		//artworkInfoPanel.transform.GetChild(6).GetComponentInChildren<UnityEngine.UI.Button>().onClick.AddListener(delegate { OnGetArtwork(); });
 
+
+		wishlist.currentArt = art;
+
+	}
+
+	public GameObject OnGetArtwork() {
+		return GetArtwork();
+	}
+
+	public GameObject GetArtwork() {
+		return artwork.gameObject;
 	}
 }

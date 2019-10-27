@@ -12,6 +12,8 @@ public class Wishlist : MonoBehaviour {
 
 	public GameObject artworkInfoPanel;
 
+	public GameObject currentArt;
+
     // Start is called before the first frame update
     void Start() {
         
@@ -58,11 +60,13 @@ public class Wishlist : MonoBehaviour {
 				buttonArt.description = artworkArt.description;
 				buttonArt.price = artworkArt.price;
 				buttonArt.noOfLikes = artworkArt.noOfLikes;
+				newButton.GetComponent<UpdateInfoPanel>().wishlist = this;
+				newButton.GetComponent<UpdateInfoPanel>().art = artwork;
 
 				newButton.GetComponent<UpdateInfoPanel>().artworkInfoPanel = artworkInfoPanel;
 
 				scrollViewContent.GetComponent<RectTransform>().sizeDelta = new Vector2(scrollViewContent.GetComponent<RectTransform>().sizeDelta.x+40, 300);
-				print("Set the info panel to: " + artworkInfoPanel);
+				//print("Set the info panel to: " + artworkInfoPanel);
 			}
 		} else {
 			// Wishlist is empty so hide the sample text and display the info message.
@@ -83,12 +87,20 @@ public class Wishlist : MonoBehaviour {
 	}
 
 	public void AddArtworkToWishlist(GameObject artwork) {
-		print("Added to wishlist");
+		//print("Added to wishlist");
 		artworkWishlist.AddLast(artwork);
 	}
 
 	public void RemoveArtworkFromWishlist(GameObject artwork) {
-		print("Removed Art From wishlist");
+		//print("Removed Art From wishlist");
+		//print("wishlist is " + artworkWishlist.Count + " long");
 		artworkWishlist.Remove(artwork);
+		//print("wishlist is " + artworkWishlist.Count + " long");
 	}
+
+	public void DeleteFromWishlistButton() {
+		RemoveArtworkFromWishlist(currentArt);
+		RefreshUI();
+	}
+
 }
