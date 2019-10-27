@@ -9,6 +9,8 @@ public class TourGuideLogic : MonoBehaviour
     public bool pausedTour = false;
     public int artworkIndex = 0;
 
+	public GameObject progressBar;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,7 @@ public class TourGuideLogic : MonoBehaviour
                 artworkIndex = 0;
             }
             gameObject.transform.position = artworks[artworkIndex].transform.GetChild(3).transform.position;
+			progressBar.GetComponent<UpdateProgressBar>().UpdateProgressBarWidth(artworkIndex);
         }
        
     }
@@ -47,7 +50,8 @@ public class TourGuideLogic : MonoBehaviour
                 artworkIndex = artworks.Length - 1;
             }
             gameObject.transform.position = artworks[artworkIndex].transform.GetChild(3).transform.position;
-        }
+			progressBar.GetComponent<UpdateProgressBar>().UpdateProgressBarWidth(artworkIndex);
+		}
       
     }
     
@@ -57,7 +61,8 @@ public class TourGuideLogic : MonoBehaviour
         artworkIndex = 0;  // When a tour is cancelled, the tour guide position is reset to first artwork.
         gameObject.transform.position = artworks[artworkIndex].transform.GetChild(3).transform.position;
         gameObject.SetActive(false);
-    }
+		progressBar.GetComponent<UpdateProgressBar>().UpdateProgressBarWidth(artworkIndex);
+	}
 
     public void pauseTour()
     {
