@@ -939,7 +939,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42020
+  m_Name: pb_Mesh47226
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2561,7 +2561,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41992
+  m_Name: pb_Mesh47198
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2724,7 +2724,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh40924
+  m_Name: pb_Mesh46126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3249,7 +3249,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -3259,17 +3259,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -3305,23 +3305,27 @@ PrefabInstance:
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: title
-      value: Artwork 4
+      value: Uncharted Territory
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: author
-      value: ' John Smith'
+      value: Dan Nelson
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: description
-      value: This is an artwork in the gallery. It has alot of orange on it. Sample
-        Text.
+      value: 2019, oil on canvas, 198.1 x 91.4 cm
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: price
-      value: $150
+      value: $2400
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -3673,7 +3677,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -3683,17 +3687,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -3734,7 +3738,24 @@ PrefabInstance:
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: author
-      value: Author Name
+      value: Mazie Turner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: "2009, oil on belgian linen,  152.5 x 183 cm  Donated by the artist to
+        the University of Newcastle Collection through the Australian Government\u2019s
+        Cultural Gifts Program"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: Not for sale
       objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -4060,7 +4081,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41514
+  m_Name: pb_Mesh46722
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4505,7 +4526,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -4515,17 +4536,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -4558,6 +4579,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: cf0613063a17e954e9ff9a79d101f5b2,
         type: 3}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 324
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: title
+      value: Kinship
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Katrina Holden
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: 2019, acrylic on canvas, 40 x 51 cm
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: $600
+      objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -7017,21 +7063,28 @@ PrefabInstance:
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: title
-      value: Paper
+      value: Presence of Absence
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: description
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor
-        scelerisque sapien, ac sagittis massa fermentum eget. Curabitur neque mi,
-        aliquet eu varius eget, gravida eget mi. Mauris commodo porta varius. Curabitur
-        tincidunt lectus vitae sagittis consectetur. Mauris vestibulum sollicitudin
-        tellus vitae consequat. In congue porta placerat. '
+      value: '- Erasure (the Body), 2019, Muslin, pigment, chalk & paint on stretcher,
+        70 x 70 cm'
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: price
-      value: $260
+      value: $1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Annemarie Murland
       objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -8242,7 +8295,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41290
+  m_Name: pb_Mesh46498
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8605,7 +8658,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41922
+  m_Name: pb_Mesh47128
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9386,7 +9439,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41806
+  m_Name: pb_Mesh47012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9549,7 +9602,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41180
+  m_Name: pb_Mesh46382
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10237,7 +10290,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41758
+  m_Name: pb_Mesh46966
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10525,7 +10578,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -10535,17 +10588,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -10578,6 +10631,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 9b9695c1fa5bade4381b6ef9988b9058,
         type: 3}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Mazie Turner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: Not for sale
+      objectReference: {fileID: 0}
     - target: {fileID: 3848041892681688177, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11692,7 +11765,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -11702,17 +11775,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -11748,12 +11821,12 @@ PrefabInstance:
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: title
-      value: Vertical Strips
+      value: For Landscape a Cover Curtain Shield or Bark 1/5 & 2/5
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: author
-      value: David Johnston
+      value: Mazie Turner
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -11763,7 +11836,12 @@ PrefabInstance:
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: price
-      value: $500
+      value: Not for sale
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -12227,7 +12305,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42086
+  m_Name: pb_Mesh47292
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -59790,7 +59868,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41274
+  m_Name: pb_Mesh46482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60570,7 +60648,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41960
+  m_Name: pb_Mesh47166
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -60847,7 +60925,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41372
+  m_Name: pb_Mesh46580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -61484,7 +61562,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42162
+  m_Name: pb_Mesh47368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -63301,7 +63379,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41666
+  m_Name: pb_Mesh46876
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -64349,7 +64427,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41136
+  m_Name: pb_Mesh46338
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -64637,7 +64715,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -64647,17 +64725,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -64690,6 +64768,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 72d33d126f9dd5a47974d3d655b5df8b,
         type: 3}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: title
+      value: Untitled
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Mazie Turner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: Not for sale
+      objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -65188,7 +65291,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -65198,17 +65301,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -65241,6 +65344,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5d5dd33162388494db14fa93de2571c0,
         type: 3}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: title
+      value: Erasure 2#
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Annemarie Murland
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: 2019, mixed media
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: $650
+      objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -65630,7 +65758,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41262
+  m_Name: pb_Mesh46470
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -66340,7 +66468,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42034
+  m_Name: pb_Mesh47240
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -66635,7 +66763,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41622
+  m_Name: pb_Mesh46832
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -66798,7 +66926,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41678
+  m_Name: pb_Mesh46888
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -67524,7 +67652,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -67534,17 +67662,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -67577,6 +67705,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b800aa66adfbbf84eb0aba231cd9d0e0,
         type: 3}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: title
+      value: Presence of Absence
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Annemarie Murland
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: ' - Erasure VI , 2019, mixed media on khozo paper, 80 x 80 cm'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: $1800
+      objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -67637,7 +67790,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41474
+  m_Name: pb_Mesh46682
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -68028,7 +68181,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41646
+  m_Name: pb_Mesh46856
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -68618,7 +68771,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41730
+  m_Name: pb_Mesh46938
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -69646,7 +69799,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh40848
+  m_Name: pb_Mesh46050
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -71443,7 +71596,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41224
+  m_Name: pb_Mesh46426
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -71606,7 +71759,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42232
+  m_Name: pb_Mesh47438
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -72078,7 +72231,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh41086
+  m_Name: pb_Mesh46288
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -73032,7 +73185,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -73042,17 +73195,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -73085,6 +73238,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4d52b9346c662fb478c4425b1264475d,
         type: 3}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: title
+      value: Untitled
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: author
+      value: Mazie Turner
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: description
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: price
+      value: Not for sale
+      objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -74996,7 +75174,7 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -75006,17 +75184,17 @@ PrefabInstance:
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8071456082551213072, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7601707671395627689, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
@@ -75057,16 +75235,17 @@ PrefabInstance:
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: description
-      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor
-        scelerisque sapien, ac sagittis massa fermentum eget. Curabitur neque mi,
-        aliquet eu varius eget, gravida eget mi. Mauris commodo porta varius. Curabitur
-        tincidunt lectus vitae sagittis consectetur. Mauris vestibulum sollicitudin
-        tellus vitae consequat. In congue porta placerat. '
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
       propertyPath: price
-      value: $2000
+      value: Not for sale
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502596174326012748, guid: 35967569da23e6849bdeb4f0acc78358,
+        type: 3}
+      propertyPath: noOfLikes
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: 418875673872921720, guid: 35967569da23e6849bdeb4f0acc78358,
         type: 3}
