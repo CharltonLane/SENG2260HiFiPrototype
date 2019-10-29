@@ -22,6 +22,7 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 	public GameObject homeMenu; // The references to these are set in the editor.
 	public GameObject infoMenu;
 	public GameObject tourInfoMenu;
+	public GameObject tourMenu;
     public GameObject ARtMenu;
 
 	public Wishlist wishlist;
@@ -69,15 +70,16 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 	private void OnTriggerEnter(Collider other) {
        
         //Checking that the collider that was triggered was the ARt Zone
-        if (other.Equals(ARtZone))
-        {
+        if (other.Equals(ARtZone)) {
             Debug.Log("User entered ARt Zone");
             //Ask which hand they want the UI to be on
             //ChangeUI here
-            DisplayARtMenu();
-        }
-        else
-        {   
+			
+			if (homeMenu.activeSelf) {
+				DisplayARtMenu();
+			}
+            
+        } else {   
             //If collider wasnt ARt Zone, then it must be an artwork
             // We've entered an artworks trigger so lets remember it so we can enable the info panel if needed.
             EnableIButton();
@@ -89,17 +91,24 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 
 	private void OnTriggerExit(Collider other) {
         
-        if (other.Equals(ARtZone))
-        {
-            Debug.Log("User exited ARt Zone");
-            HideARtMenu();
+        if (other.Equals(ARtZone)) {
+			Debug.Log("User exited ARt Zone");
+			if (ARtMenu.activeSelf) {
+				HideARtMenu();
+			}
+            
         }
         else if (infoPanel.activeSelf) {
             // We have left an artwork's trigger so lets close the info panel if it's open.
             HideInfoPanel();
-			// Also need to switch the menu back to the home menu.
-			homeMenu.SetActive(true);
-			infoMenu.SetActive(false);
+			if (infoMenu.activeSelf) { 
+				// Also need to switch the menu back to the home menu.
+				homeMenu.SetActive(true);
+				infoMenu.SetActive(false);
+			} else if (tourInfoMenu.activeSelf) {
+				tourInfoMenu.SetActive(false);
+				tourMenu.SetActive(true);
+			}
 		}
 
         // Make it 'forget' the last painting by creating new artwork objects
@@ -172,4 +181,13 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 		artwork.GetComponent<Artwork>().UnlikeArtwork();
         infoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = "Likes: " + artwork.GetComponent<Artwork>().noOfLikes;
     }
+
+
+	void OnGUI() {
+		GUI.Label(new Rect(10, 10, 1000, 25), "Scenario 1: Add an artwork to the wishlist and view it in the wishlist.");
+		GUI.Label(new Rect(10, 30, 1000, 25), "Scenario 2: Begin and complete a tour.");
+		GUI.Label(new Rect(10, 50, 1000, 25), "Scenario 3: Explore the ARt zone UI.");
+
+	}
+
 }
