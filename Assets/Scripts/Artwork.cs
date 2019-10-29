@@ -27,6 +27,7 @@ public class Artwork : MonoBehaviour {
 			infoPanel.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = author;
 			infoPanel.transform.GetChild(2).GetComponent<TMPro.TextMeshProUGUI>().text = description;
 			infoPanel.transform.GetChild(3).GetComponent<TMPro.TextMeshProUGUI>().text = price;
+            infoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = "Likes: " + noOfLikes.ToString();
 		}
 
 		

@@ -165,9 +165,11 @@ public class UpdateUIWhenNearArtwork : MonoBehaviour {
 
 	public void LikeArtwork() {
 		artwork.GetComponent<Artwork>().LikeArtwork();
-	}
+        infoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = "Likes: " + artwork.GetComponent<Artwork>().noOfLikes;
+    }
 
 	public void UnlikeArtwork() {
 		artwork.GetComponent<Artwork>().UnlikeArtwork();
-	}
+        infoPanel.transform.GetChild(4).GetComponent<TMPro.TextMeshProUGUI>().text = "Likes: " + artwork.GetComponent<Artwork>().noOfLikes;
+    }
 }
